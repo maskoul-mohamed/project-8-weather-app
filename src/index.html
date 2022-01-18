@@ -6,13 +6,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Weather</title>
-</head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    </head>
 
 <body>
-    <div>
-        <input id="cityInput" type="text" placeholder="City Name">
-        <button onclick="onSearch()">Search</button>
-    </div>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid d-flex justify-content-center">
+            <a class="navbar-brand">My Weather</a>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Location" aria-label="Location">
+                <i class="fas fa-search-location btn btn-outline-info "></i>
+
+            </form>
+
+        </div>
+    </nav>
+
     <div class="current_weather">
         <div>
             <p>Tanger</p>
@@ -23,7 +34,7 @@
                 18°
             </p>
             <p>
-                
+
             </p>
         </div>
     </div>
@@ -31,5 +42,6 @@
 <script src="weather.js"></script>
 <script src="weatherManager.js"></script>
 <script src="main.js"></script>
+<script src="https://kit.fontawesome.com/cdf6769bc6.js" crossorigin="anonymous"></script>
 
 </html>

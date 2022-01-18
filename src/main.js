@@ -9,3 +9,4 @@ function onSearch() {
     weatherManager.fetchForecast(url)
     document.getElementById("cityInput").value = ""
 }
+
