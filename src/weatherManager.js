@@ -49,4 +49,7 @@ class WeatherManager {
         this.#_currentForecast = weather
 
     }
+
+ 
+
 }

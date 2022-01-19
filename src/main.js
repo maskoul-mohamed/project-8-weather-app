@@ -16,14 +16,17 @@ async function onSearch() {
 
     document.getElementById("cityInput").value = ""
     city = undefined
-
-  
-
-
 }
 
 
 function display(currentForecast) {
-    console.log(currentForecast)
+    document.getElementById('cityText').innerText = currentForecast.city
+    document.getElementById('tempText').innerText = currentForecast.temp
+    document.getElementById('descriptionText').innerText = currentForecast.description
+    document.getElementById('humidityText').innerText = currentForecast.humidity
+    document.getElementById('weatherIcon').src = "http://openweathermap.org/img/wn/"+currentForecast.iconCode +"@2x.png"
 
+    document.getElementById('card').classList.remove('hide')
+    document.getElementById('text').classList.add('hide')
+        
 }
