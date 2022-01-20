@@ -14,6 +14,10 @@ body {
 
 }
 
+#fas:hover {
+    color: white;
+}
+
 #fa-tint {
     line-height: unset;
     margin-right: 8px;
