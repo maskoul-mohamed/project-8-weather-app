@@ -6,7 +6,7 @@ async function onSearch() {
     var weatherManager = new WeatherManager()
 
     city = document.getElementById("cityInput").value
-    var url = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
+    var url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${key}&units=metric`;
 
     if (city) {
         weatherManager.fetchForecast(url).then(() => {
