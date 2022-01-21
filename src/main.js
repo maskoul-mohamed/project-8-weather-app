@@ -10,7 +10,12 @@ async function onSearch() {
 
     if (city) {
         weatherManager.fetchForecast(url).then(() => {
-            display(weatherManager.currentForecast)
+            if(weatherManager.errorMsg){
+                displayError(weatherManager.errorMsg)
+            }else {
+                display(weatherManager.currentForecast)
+
+            }
         })
     }
 
@@ -28,5 +33,13 @@ function display(currentForecast) {
 
     document.getElementById('card').classList.remove('hide')
     document.getElementById('text').classList.add('hide')
-        
+
+}
+
+function displayError(errorMsg){
+    const textDisplay = document.getElementById('text')
+    textDisplay.innerText = errorMsg
+    textDisplay.style.color = "#e63946"
+    document.getElementById('card').classList.add('hide')
+    document.getElementById('text').classList.remove('hide')
 }
