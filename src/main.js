@@ -26,7 +26,7 @@ async function onSearch() {
 
 function display(currentForecast) {
     document.getElementById('cityText').innerText = currentForecast.city
-    document.getElementById('tempText').innerText = currentForecast.temp
+    document.getElementById('tempText').innerText = currentForecast.temp + '°'
     document.getElementById('descriptionText').innerText = currentForecast.description
     document.getElementById('humidityText').innerText = currentForecast.humidity
     document.getElementById('weatherIcon').src = "http://openweathermap.org/img/wn/"+currentForecast.iconCode +"@2x.png"
