@@ -1,4 +1,4 @@
-# project-8-weather-app
+# project-9-weather-app
 
 
 <h4 align="center"><a href="https://maskoul-mohamed.github.io/project9-weather-app/">Live version >></a></h4>
@@ -24,8 +24,7 @@ The weather app allows a user to search for weather information for a specific l
 - Current humidity.
 
 ## Preview
-
-<img src="https://github.com/maskoul-mohamed/project9-weather-app/blob/main/screenshots/Screenshot 2022-03-09 at 16-44-59 Weather Now.png" width="400" display="inline">
+![screenshot](screenshots/weather-now.png)
 
 
 ## Built With
